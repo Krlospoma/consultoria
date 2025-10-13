@@ -4,47 +4,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Navbar Brand */
-.navbar-brand,
-.navbar-brand:hover {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px;
-  color: #fafcfd;
-}
-
-.navbar-brand {
-  display: flex; /* usa flexbox */
-  flex-direction: row; /* imagen y texto lado a lado */
-  align-items: center; /* centra verticalmente */
-  gap: 10px; /* espacio entre imagen y texto */
-}
-
-.navbar-brand img {
-  width: 50px;
-  height: auto;
-}
-
-.navbar-brand span {
-  font-size: 20px;
-  font-weight: 700;
-  color: #191919;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 5px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
-}
-
 .custom_heading {
   font-size: 36px;
   font-weight: 700;
@@ -87,17 +46,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #191919;
-}
-
-/* Botón de menú (hamburger) */
-.navbar-toggler {
-  border: none;
-  outline: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
 }
 
 /* Menú responsivo: en escritorio horizontal, en móvil colapsable */
@@ -321,10 +269,6 @@ body {
   color: #023b48;
 }
 
-.client_section .pl-100 {
-  padding-left: 100px;
-}
-
 .client_section .client_container {
   width: 90%;
   display: -webkit-box;
@@ -336,11 +280,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 30px 0;
-}
-
-.client_section .client_container .img_box {
-  width: 200px;
-  margin-left: -100px;
 }
 
 .client_section .client_container .img_box img {
@@ -419,9 +358,14 @@ body {
   position: relative;
 }
 
-/* Secciones */
 section {
   padding: 80px 5%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 2%; /* reduce padding lateral en móviles */
+  }
 }
 
 section.grey {
@@ -430,7 +374,7 @@ section.grey {
 
 .section-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 100px;
   margin: 20px 0;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
