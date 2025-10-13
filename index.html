@@ -12,31 +12,23 @@
     <meta name="author" content="" />
     <title>Consultoría Secretarial</title>
 
-    <!-- CSS de OwlCarousel -->
+    <!-- Bootstrap CSS desde CDN -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
 
-    <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <!-- Fuentes -->
+    <!-- Font Awesome 6 -->
     <link
-      href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <!-- Estilos personalizados -->
+    <!-- Tus estilos personalizados -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
-
-    <!-- Scroll suave -->
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
 
   <body>
@@ -98,20 +90,26 @@
 
     <!-- Inicio -->
     <section id="inicio" class="slider_section position-relative">
-      <div class="row">
-        <div class="col-md-4 offset-md-2">
-          <div class="slider_detail-box">
-            <h1>SecretariArte <span>Consultoría Secretarial</span></h1>
-            <p>Organización profesional con estilo y caligrafía.</p>
-            <div class="btn-box">
-              <a href="#servicios" class="btn-1">Descúbrelo</a>
-              <a href="#contacto" class="btn-2">Contacto</a>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Texto -->
+          <div class="col-md-6">
+            <div class="slider_detail-box text-center text-md-start">
+              <img src="images/logo.png" alt="Logo" width="200" />
+              <h1>SecretariArte <span>Consultoría Secretarial</span></h1>
+              <p>Organización profesional con estilo y caligrafía.</p>
+              <div class="btn-box">
+                <a href="#servicios" class="btn-1">Descúbrelo</a>
+                <a href="#contacto" class="btn-2">Contacto</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="slider_img-box">
-            <img src="images/secretaria.png" alt="Imagen de portada" />
+
+          <!-- Imagen -->
+          <div class="col-md-6 text-center">
+            <div class="slider_img-box">
+              <img src="images/secretaria.png" alt="Imagen de portada" />
+            </div>
           </div>
         </div>
       </div>
@@ -120,17 +118,28 @@
     <!-- Quiénes Somos -->
     <section id="quienes" class="about_section layout_padding grey">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about.png" alt="Sobre nosotros" />
+        <div class="row align-items-center">
+          <!-- Imagen a la izquierda -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="img-box text-center">
+              <img
+                src="images/quienes.jpeg"
+                alt="Sobre nosotros"
+                class="img-fluid rounded shadow-sm"
+              />
             </div>
           </div>
+
+          <!-- Texto a la derecha -->
           <div class="col-md-6">
-            <div class="detail-box">
-              <h2 class="custom_heading">
+            <div class="detail-box text-center text-md-start">
+              <h2 class="custom_heading text-center">
                 Sobre Nuestra <span>SecretariArte</span>
               </h2>
+              <hr
+                class="mx-auto mb-4"
+                style="width: 430px; border: 1px solid #023b48"
+              />
               <p>
                 SecretariArte es una consultora emergente que brinda servicios
                 especializados en digitalización y organización de archivos,
@@ -138,7 +147,7 @@
                 estética y eficiencia. Además, creamos agendas personalizadas
                 con letra Palmer como expresión de identidad profesional.
               </p>
-              <a href="#">Más información</a>
+              <a href="#" class="btn btn-primary mt-3">Más información</a>
             </div>
           </div>
         </div>
@@ -148,15 +157,28 @@
     <!-- Misión y Visión -->
     <section id="mision" class="about_section layout_padding">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about.png" alt="Misión y visión" />
+        <div class="row align-items-center">
+          <!-- Imagen a la izquierda -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="img-box text-center">
+              <img
+                src="images/mision.jpeg"
+                alt="Misión y Visión"
+                class="img-fluid rounded shadow-sm"
+              />
             </div>
           </div>
+
+          <!-- Texto a la derecha -->
           <div class="col-md-6">
-            <div class="detail-box">
-              <h2 class="custom_heading">Misión <span>Visión</span></h2>
+            <div class="detail-box text-center text-md-start">
+              <h2 class="custom_heading text-center">
+                Misión <span>Visión</span>
+              </h2>
+              <hr
+                class="mx-auto mb-4"
+                style="width: 190px; border: 1px solid #023b48"
+              />
               <p>
                 <strong>Misión:</strong> Brindar servicios de consultoría
                 secretarial innovadores, eficientes y estéticos, que mejoren la
@@ -169,7 +191,7 @@
                 creatividad y caligrafía profesional para fortalecer la
                 identidad institucional.
               </p>
-              <a href="#">Más información</a>
+              <a href="#" class="btn btn-primary mt-3">Más información</a>
             </div>
           </div>
         </div>
@@ -180,43 +202,46 @@
     <section id="servicios" class="service_section layout_padding grey">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 offset-md-2">
+          <div class="col-md-6 mx-auto text-center">
             <h2 class="custom_heading">Nuestros <span>Servicios</span></h2>
+            <hr
+              class="mx-auto mb-4"
+              style="width: 280px; border: 1px solid #023b48"
+            />
             <div class="container layout_padding2">
-              <div class="row">
+              <div class="row text-center">
                 <div class="col-md-4">
                   <div class="img_box">
-                    <img
-                      src="images/s-1.png"
-                      alt="Digitalización de archivos"
-                    />
+                    <i class="fa-solid fa-file-lines"></i>
                   </div>
                   <div class="detail_box">
-                    <h6>Digitalización de Archivos:</h6>
+                    <h6>Digitalización de Archivos</h6>
                     <p>
                       Transformamos documentos físicos en digitales de manera
                       ordenada y segura.
                     </p>
                   </div>
                 </div>
+
                 <div class="col-md-4">
                   <div class="img_box">
-                    <img src="images/s-2.png" alt="Organización documental" />
+                    <i class="fa-solid fa-folder-open"></i>
                   </div>
                   <div class="detail_box">
-                    <h6>Organización Documental:</h6>
+                    <h6>Organización Documental</h6>
                     <p>
                       Implementamos sistemas de clasificación, codificación y
                       archivo de documentos.
                     </p>
                   </div>
                 </div>
+
                 <div class="col-md-4">
                   <div class="img_box">
-                    <img src="images/s-3.png" alt="Agendas personalizadas" />
+                    <i class="fa-solid fa-book"></i>
                   </div>
                   <div class="detail_box">
-                    <h6>Agendas Personalizadas:</h6>
+                    <h6>Agendas Personalizadas</h6>
                     <p>
                       Creación artesanal de agendas con letra Palmer, combinando
                       estética y funcionalidad.
@@ -228,7 +253,7 @@
             <a href="#">Leer más</a>
           </div>
           <div class="col-md-4">
-            <img src="images/tool.png" alt="Herramientas" class="w-100" />
+            <img src="images/servicio0.png" alt="Herramientas" class="w-100" />
           </div>
         </div>
       </div>
@@ -237,39 +262,50 @@
     <!-- Galería -->
     <section id="galeria" class="gallery-section layout_padding">
       <div class="container text-center">
-        <h2>Nuestra Galería</h2>
+        <h2 class="custom_heading">Nuestra <span>Galería</span></h2>
+        <hr
+          class="mx-auto mb-4"
+          style="width: 220px; border: 1px solid #023b48"
+        />
         <div class="row">
           <div class="col-md-4 mb-3">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="images/secre1.jpeg"
               class="w-100 rounded"
               alt="Galería 1"
             />
           </div>
           <div class="col-md-4 mb-3">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="images/secre2.jpeg"
               class="w-100 rounded"
               alt="Galería 2"
             />
           </div>
           <div class="col-md-4 mb-3">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="images/secre3.jpeg"
               class="w-100 rounded"
               alt="Galería 3"
             />
           </div>
           <div class="col-md-4 mb-3">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="images/secre4.jpeg"
               class="w-100 rounded"
               alt="Galería 4"
             />
           </div>
           <div class="col-md-4 mb-3">
             <img
-              src="https://via.placeholder.com/400x300"
+              src="images/secre5.jpeg"
+              class="w-100 rounded"
+              alt="Galería 5"
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <img
+              src="images/secre6.jpeg"
               class="w-100 rounded"
               alt="Galería 5"
             />
@@ -281,24 +317,28 @@
     <!-- Beneficios -->
     <section id="beneficios" class="section grey">
       <div class="container text-center">
-        <h2><i class="fa-solid fa-check-circle"></i> Beneficios</h2>
+        <h2 class="custom_heading">Nuestros <span>Beneficios</span></h2>
+        <hr
+          class="mx-auto mb-4"
+          style="width: 300px; border: 1px solid #023b48"
+        />
         <div class="cards-grid">
           <div class="feature-card">
-            <img src="https://via.placeholder.com/400x300" alt="Eficiencia" />
+            <img src="images/beneficio1.jpeg" alt="Eficiencia" />
             <p>
               Mejora la eficiencia operativa de tu empresa al optimizar la
               gestión de documentos.
             </p>
           </div>
           <div class="feature-card">
-            <img src="https://via.placeholder.com/400x300" alt="Organización" />
+            <img src="images/beneficio2.jpeg" alt="Organización" />
             <p>
               Reduce pérdidas y errores en tus archivos mediante procesos
               organizados y codificados.
             </p>
           </div>
           <div class="feature-card">
-            <img src="https://via.placeholder.com/400x300" alt="Estética" />
+            <img src="images/beneficio3.jpeg" alt="Estética" />
             <p>
               Refuerza la identidad profesional con productos personalizados y
               visualmente atractivos.
@@ -312,6 +352,10 @@
     <section id="equipo" class="section grey">
       <div class="container text-center">
         <h2 class="custom_heading">Nuestro <span>Equipo</span></h2>
+        <hr
+          class="mx-auto mb-4"
+          style="width: 220px; border: 1px solid #023b48"
+        />
         <div
           class="team-grid"
           style="
@@ -423,6 +467,10 @@
         <h2 class="custom_heading">
           Lo que dicen nuestros <span>clientes</span>
         </h2>
+        <hr
+          class="mx-auto mb-4"
+          style="width: 480px; border: 1px solid #023b48"
+        />
         <p class="mb-5">
           Nuestros clientes confían en nosotros por la organización, estética y
           dedicación que ponemos en cada proyecto.
@@ -498,61 +546,75 @@
     <!-- Contacto -->
     <section id="contacto" class="map_section py-5">
       <div class="container">
-        <div class="row align-items-start">
+        <div class="text-center mb-4">
+          <h2 class="custom_heading">Nuestra <span>Ubicación</span></h2>
+          <hr
+            class="mx-auto mb-4"
+            style="width: 280px; border: 1px solid #023b48"
+          />
+        </div>
+        <div class="row g-4 align-items-stretch">
           <!-- Mapa a la izquierda -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div
-              class="map-container"
-              style="border-radius: 12px; overflow: hidden"
-            >
+          <div class="col-lg-6 d-flex">
+            <div class="map-container flex-fill shadow-sm rounded">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3839.363646497889!2d-67.1147206396135!3d-17.97044246420564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1760320597073!5m2!1ses-419!2sbo"
                 width="100%"
-                height="400"
-                style="border: 0"
+                height="100%"
+                style="border: 0; min-height: 400px"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-              >
-              </iframe>
+              ></iframe>
             </div>
           </div>
 
           <!-- Formulario a la derecha -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex">
             <div
-              class="form_container p-4"
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
+              class="form_container flex-fill shadow-sm rounded p-4"
+              style="background-color: #f9f9f9"
             >
+              <h2 class="custom_heading text-center mb-3">
+                Envianos tus <span>Sugerencias</span>
+              </h2>
+              <hr
+                class="mx-auto mb-4"
+                style="width: 400px; border: 1px solid #023b48"
+              />
               <form>
-                <div class="text-center mb-3">
-                  <h3>Contáctanos</h3>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    placeholder="Nombre"
+                    class="form-control py-2"
+                  />
                 </div>
-                <input
-                  type="text"
-                  placeholder="Nombre"
-                  class="pt-3 mb-2 form-control"
-                />
-                <input
-                  type="text"
-                  placeholder="Número de teléfono"
-                  class="mb-2 form-control"
-                />
-                <input
-                  type="email"
-                  placeholder="Correo electrónico"
-                  class="mb-2 form-control"
-                />
-                <textarea
-                  class="message-box form-control mb-3"
-                  placeholder="Mensaje"
-                ></textarea>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    placeholder="Número de teléfono"
+                    class="form-control py-2"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    placeholder="Correo electrónico"
+                    class="form-control py-2"
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control py-2"
+                    placeholder="Mensaje"
+                    rows="5"
+                  ></textarea>
+                </div>
                 <div class="text-center">
-                  <button class="btn btn-primary">ENVIAR</button>
+                  <button type="submit" class="btn btn-primary px-4">
+                    ENVIAR
+                  </button>
                 </div>
               </form>
             </div>
@@ -561,10 +623,63 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-4">
-      <p>&copy; 2025 SecretariArte. Todos los derechos reservados.</p>
-      <p>Ubicación | +02 1234567890 | demo@gmail.com</p>
+    <!-- Footer Mejorado -->
+    <footer class="footer_section bg-dark text-white py-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Sobre Nosotros -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">SecretariArte</h5>
+            <p>
+              Transformando la organización documental con creatividad y
+              profesionalismo.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Contacto</h5>
+            <p><i class="fa-solid fa-location-dot me-2"></i>Oruro, Bolivia</p>
+            <p><i class="fa-solid fa-phone me-2"></i> 69219005</p>
+            <p>
+              <i class="fa-solid fa-envelope me-2"></i>secretariarte@gmail.com
+            </p>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="col-md-4">
+            <h5 class="mb-3">Síguenos</h5>
+            <a href="#" class="text-white me-3 fs-4"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3 fs-4"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-white me-3 fs-4"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white fs-4"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Derechos -->
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="mb-0">
+              &copy; 2025 SecretariArte. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS con Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
