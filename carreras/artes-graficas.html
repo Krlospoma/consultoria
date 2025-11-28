@@ -1,0 +1,66 @@
+<div id="templates/header"></div>
+
+<section class="py-5" style="background: #f8f9fa; min-height: 100vh">
+  <div class="container">
+    <div class="text-center mb-5">
+      <i class="fa-solid fa-palette fa-5x mb-3" style="color: #023b48"></i>
+      <h2 class="fw-bold">ARTES GRÁFICAS</h2>
+      <p class="text-muted fs-5">
+        Creatividad, diseño e innovación aplicada al mundo visual y
+        publicitario.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="mb-4 p-4 bg-white shadow-sm rounded">
+          <h4 class="fw-bold">Descripción de la carrera</h4>
+          <p>
+            La carrera de Artes Gráficas forma profesionales capaces de
+            producir, diseñar y crear contenido visual utilizando herramientas
+            digitales modernas. Aprenderás técnicas de ilustración, diseño
+            editorial, identidad visual, impresión y composición gráfica.
+          </p>
+        </div>
+
+        <div class="mb-4 p-4 bg-white shadow-sm rounded">
+          <h4 class="fw-bold">Plan de Estudios</h4>
+          <ul>
+            <li>Diseño Básico y Teoría del Color</li>
+            <li>Ilustración Digital</li>
+            <li>Diseño Editorial y Publicitario</li>
+            <li>Producción e Impresión Digital</li>
+            <li>Identidad Visual y Branding</li>
+            <li>
+              Herramientas Profesionales (Adobe Photoshop, Illustrator, etc.)
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4 p-4 bg-white shadow-sm rounded">
+          <h4 class="fw-bold">Campo Laboral</h4>
+          <p>Como técnico en Artes Gráficas podrás trabajar en:</p>
+          <ul>
+            <li>Agencias de publicidad y marketing</li>
+            <li>Editoriales y periódicos</li>
+            <li>Imprentas y talleres gráficos</li>
+            <li>Empresas de diseño y branding</li>
+            <li>Freelance como diseñador independiente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="templates/footer"></div>
+
+<script>
+  fetch("../templates/header.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/header").innerHTML = d));
+
+  fetch("../templates/footer.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/footer").innerHTML = d));
+</script>

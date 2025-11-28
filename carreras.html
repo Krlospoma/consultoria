@@ -1,0 +1,124 @@
+<div id="templates/header"></div>
+
+<!-- ===================== PRESENTACIÓN DE CARRERAS ===================== -->
+<!-- Carreras -->
+<section id="carreras" class="section grey">
+  <div class="container text-center">
+    <h2 class="custom_heading">Nuestras <span>Carreras</span></h2>
+    <hr class="mx-auto mb-4" style="width: 300px; border: 1px solid #023b48" />
+
+    <div class="cards-grid">
+      <!-- ARTES GRÁFICAS -->
+      <div class="feature-card">
+        <i class="fa-solid fa-palette fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">ARTES GRÁFICAS</h4>
+        <p>
+          Desarrolla creatividad en diseño visual, ilustración y producción
+          gráfica con herramientas modernas.
+        </p>
+        <a href="carreras/artes-graficas.html" class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- CONTADURÍA GENERAL -->
+      <div class="feature-card">
+        <i class="fa-solid fa-calculator fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">CONTADURÍA GENERAL</h4>
+        <p>
+          Aprende contabilidad, finanzas y gestión fiscal para administrar
+          empresas de manera profesional.
+        </p>
+        <a href="carreras/contaduria.html" class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- ADMINISTRACIÓN DE EMPRESAS -->
+      <div class="feature-card">
+        <i class="fa-solid fa-chart-line fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">ADMINISTRACIÓN DE EMPRESAS</h4>
+        <p>
+          Domina liderazgo, gestión organizacional y planes estratégicos para
+          impulsar negocios.
+        </p>
+        <a
+          href="carreras/administracion-empresas.html"
+          class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- COMERCIO INTERNACIONAL -->
+      <div class="feature-card">
+        <i class="fa-solid fa-globe fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">COMERCIO INTERNACIONAL Y ADUANAS</h4>
+        <p>
+          Fórmate en importaciones, exportaciones, logística global y procesos
+          aduaneros internacionales.
+        </p>
+        <a
+          href="carreras/comercio-internacional.html"
+          class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- SISTEMAS INFORMÁTICOS -->
+      <div class="feature-card">
+        <i class="fa-solid fa-computer fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">SISTEMAS INFORMÁTICOS</h4>
+        <p>
+          Aprende programación, soporte técnico, redes y soluciones tecnológicas
+          para empresas modernas.
+        </p>
+        <a
+          href="carreras/sistemas-informaticos.html"
+          class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- MERCADOTECNIA -->
+      <div class="feature-card">
+        <i class="fa-solid fa-bullhorn fa-4x mb-3" style="color: #023b48"></i>
+        <h4 class="fw-bold">MERCADOTECNIA</h4>
+        <p>
+          Estudia estrategias de marketing, publicidad, ventas y manejo de
+          marcas para el mundo actual.
+        </p>
+        <a href="carreras/mercadotecnia.html" class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+
+      <!-- TURISMO -->
+      <div class="feature-card">
+        <i
+          class="fa-solid fa-plane-departure fa-4x mb-3"
+          style="color: #023b48"
+        ></i>
+        <h4 class="fw-bold">TURISMO</h4>
+        <p>
+          Prepárate en hotelería, atención turística, cultura y gestión de
+          servicios internacionales.
+        </p>
+        <a href="carreras/turismo.html" class="btn btn-primary mt-3"
+          >Más información</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="templates/footer"></div>
+
+<script>
+  fetch("../templates/header.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/header").innerHTML = d));
+
+  fetch("../templates/footer.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/footer").innerHTML = d));
+</script>

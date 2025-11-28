@@ -1,0 +1,65 @@
+<div id="templates/header"></div>
+
+<section class="py-5" style="background: #f8f9fa; min-height: 100vh">
+  <div class="container">
+    <div class="text-center mb-5">
+      <i
+        class="fa-solid fa-suitcase-rolling fa-5x mb-3"
+        style="color: #023b48"
+      ></i>
+      <h2 class="fw-bold">TURISMO</h2>
+      <p class="text-muted fs-5">
+        Planificación, promoción y gestión de experiencias turísticas a nivel
+        nacional e internacional.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="bg-white p-4 shadow-sm rounded mb-4">
+          <h4 class="fw-bold">Descripción de la carrera</h4>
+          <p>
+            La carrera de Turismo forma profesionales capaces de gestionar
+            agencias, planificar viajes, coordinar servicios turísticos y
+            desarrollar experiencias únicas para los clientes.
+          </p>
+        </div>
+
+        <div class="bg-white p-4 shadow-sm rounded mb-4">
+          <h4 class="fw-bold">Plan de Estudios</h4>
+          <ul>
+            <li>Gestión Turística</li>
+            <li>Agencias y Operadores de Viajes</li>
+            <li>Turismo Cultural y Natural</li>
+            <li>Marketing Turístico</li>
+            <li>Hospitalidad y Atención al Cliente</li>
+            <li>Emprendimiento en Turismo</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-4 shadow-sm rounded mb-4">
+          <h4 class="fw-bold">Campo Laboral</h4>
+          <ul>
+            <li>Agencias de viajes</li>
+            <li>Hoteles y resorts</li>
+            <li>Organización de tours y eventos turísticos</li>
+            <li>Promoción turística local y nacional</li>
+            <li>Emprendedor en turismo y hospitalidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="templates/footer"></div>
+
+<script>
+  fetch("../templates/header.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/header").innerHTML = d));
+
+  fetch("../templates/footer.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/footer").innerHTML = d));
+</script>

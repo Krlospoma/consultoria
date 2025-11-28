@@ -1,157 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <meta
-      name="keywords"
-      content="secretariado, consultoría, organización, agendas, digitalización"
-    />
-    <meta
-      name="description"
-      content="Letra y Orden - Consultoría Secretarial: digitalización, organización documental y agendas personalizadas."
-    />
-    <meta name="author" content="Letra y Orden" />
-
-    <title>Letra y Orden</title>
-    <link rel="icon" type="image/png" href="images/logo.png" />
-
-    <!-- Bootstrap CSS desde CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
-    <!-- Font Awesome 6 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-
-    <!-- Tus estilos personalizados -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <header class="header_section">
-      <div class="container-fluid px-0">
-        <!-- quitar padding -->
-        <nav
-          id="mainNavbar"
-          class="navbar navbar-expand-lg navbar-light bg-light w-100"
-        >
-          <!-- Botón hamburguesa a la izquierda -->
-          <button
-            class="navbar-toggler order-0 ms-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Logo centrado con espacio a la izquierda -->
-          <a
-            class="navbar-brand d-flex align-items-center mx-auto ms-4 order-1"
-            href="#inicio"
-          >
-            <img src="images/logo.png" alt="Logo" />
-            <span>Letra y Orden</span>
-          </a>
-
-          <!-- Menú -->
-          <div
-            class="collapse navbar-collapse justify-content-center order-2"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#inicio">
-                  <i class="fa-solid fa-house me-2"></i>Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quienes">
-                  <i class="fa-solid fa-users me-2"></i>Quiénes Somos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mision">
-                  <i class="fa-solid fa-bullseye me-2"></i>Misión y Visión
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">
-                  <i class="fa-solid fa-briefcase me-2"></i>Servicios
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#beneficios">
-                  <i class="fa-solid fa-gift me-2"></i>Beneficios
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#galeria">
-                  <i class="fa-solid fa-image me-2"></i>Galería
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#equipo">
-                  <i class="fa-solid fa-user-tie me-2"></i>Equipo
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">
-                  <i class="fa-solid fa-envelope me-2"></i>Contáctanos
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Activar ScrollSpy -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-          target: "#mainNavbar",
-          offset: 80,
-        });
-      });
-    </script>
-
-    <style>
-      /* Línea debajo del enlace activo */
-      .navbar-nav .nav-link.active {
-        position: relative;
-        color: #0d6efd;
-        font-weight: 500;
-      }
-
-      .navbar-nav .nav-link.active::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: #0d6efd;
-        bottom: -5px;
-        left: 0;
-        border-radius: 3px;
-      }
-    </style>
-
+<div id="templates/header"></div>
+  
     <!-- Inicio -->
     <section id="inicio" class="slider_section position-relative">
       <div class="container">
@@ -159,11 +7,15 @@
           <!-- Texto -->
           <div class="col-md-6">
             <div class="slider_detail-box text-center text-md-start">
-              <img src="images/logo.png" alt="Logo" width="200" />
-              <h1>Letra y Orden <span>Consultoría de Secretarias</span></h1>
-              <p>Organización profesional con estilo y caligrafía.</p>
+              <img src="images/logo.jpeg" alt="Logo" width="200" />
+              <h1>
+                Institutos CATEC
+                <span>Líder en Formación Técnica y Tecnológica</span>
+              </h1>
               <div class="btn-box">
-                <a href="http://10.201.119.159/letra_orden/public/" class="btn-1"
+                <a
+                  href="http://10.201.119.159/letra_orden/public/"
+                  class="btn-1"
                   >Iniciar sesión</a
                 >
                 <a href="#contacto" class="btn-2">Contacto</a>
@@ -200,18 +52,19 @@
           <div class="col-md-6">
             <div class="detail-box text-center text-md-start">
               <h2 class="custom_heading text-center">
-                Sobre <span>Letra y Orden</span>
+                Sobre <span>Institutos CATEC</span>
               </h2>
               <hr
                 class="mx-auto mb-4"
                 style="width: 430px; border: 1px solid #023b48"
               />
               <p>
-                "Letra y Orden" es una consultora emergente que brinda servicios
-                especializados en digitalización y organización de archivos,
-                combinando herramientas tecnológicas con principios de orden,
-                estética y eficiencia. Además, creamos agendas personalizadas
-                con letra Palmer como expresión de identidad profesional.
+                "Institutos CATEC" es una consultora emergente que brinda
+                servicios especializados en digitalización y organización de
+                archivos, combinando herramientas tecnológicas con principios de
+                orden, estética y eficiencia. Además, creamos agendas
+                personalizadas con letra Palmer como expresión de identidad
+                profesional.
               </p>
 
               <a
@@ -243,7 +96,7 @@
             style="background-color: #023b48; color: #fff"
           >
             <h5 class="modal-title" id="infoModalLabel">
-              Historia de la Empresa Letra y Orden
+              Historia de la Empresa Institutos CATEC
             </h5>
             <button
               type="button"
@@ -254,7 +107,7 @@
           </div>
           <div class="modal-body p-4" style="text-align: justify">
             <p>
-              La <strong>Consultora de Secretarias “Letra y Orden”</strong>,
+              La <strong>Consultora de Secretarias “Institutos CATEC”</strong>,
               fundada el <strong>12 de octubre de 2024</strong> en la ciudad de
               <strong>Oruro</strong>, nació con el propósito de formar
               secretarias altamente capacitadas, éticas y organizadas,
@@ -276,7 +129,7 @@
               una secretaria profesional.
             </p>
             <p>
-              Hoy, <strong>Letra y Orden</strong> se ha consolidado como un
+              Hoy, <strong>Institutos CATEC</strong> se ha consolidado como un
               referente en la capacitación secretarial, impulsando la eficiencia
               y profesionalidad en el ámbito administrativo.
             </p>
@@ -311,20 +164,21 @@
                 style="width: 190px; border: 1px solid #023b48"
               />
               <p>
-                <strong>Misión:</strong> Brindar capacitación, actualización y 
+                <strong>Misión:</strong> Brindar capacitación, actualización y
                 acompañamiento profesional a secretarias ejecutivas,
-                fortaleciendo sus competencias técnicas, tecnológicas 
-                y humanas. La Consultora de Secretarias de Oruro impulsa 
-                el desarrollo continuo de sus miembros, promoviendo la 
-                excelencia, la ética profesional y la inserción laboral en 
-                empresas que valoran la eficiencia y el profesionalismo administrativo.
-                                              </p>
+                fortaleciendo sus competencias técnicas, tecnológicas y humanas.
+                La Consultora de Secretarias de Oruro impulsa el desarrollo
+                continuo de sus miembros, promoviendo la excelencia, la ética
+                profesional y la inserción laboral en empresas que valoran la
+                eficiencia y el profesionalismo administrativo.
+              </p>
               <p>
-                <strong>Visión:</strong> Ser la consultora referente en el fortalecimiento 
-                y actualización profesional de secretarias ejecutivas a nivel regional
-                y nacional, reconocida por su calidad en capacitación, su compromiso 
-                con la empleabilidad y su contribución al crecimiento del sector administrativo moderno.
-                                              </p>
+                <strong>Visión:</strong> Ser la consultora referente en el
+                fortalecimiento y actualización profesional de secretarias
+                ejecutivas a nivel regional y nacional, reconocida por su
+                calidad en capacitación, su compromiso con la empleabilidad y su
+                contribución al crecimiento del sector administrativo moderno.
+              </p>
             </div>
           </div>
         </div>
@@ -416,7 +270,7 @@
             style="background-color: #023b48; color: #fff"
           >
             <h5 class="modal-title" id="modalFasesLabel">
-              Fases del Proyecto - Letra y Orden
+              Fases del Proyecto - Institutos CATEC
             </h5>
             <button
               type="button"
@@ -699,8 +553,8 @@
               <div class="detail_box">
                 <h5>María López</h5>
                 <p>
-                  “Letra y Orden mejoró la organización de nuestros archivos de
-                  manera profesional y estética.”
+                  “Institutos CATEC mejoró la organización de nuestros archivos
+                  de manera profesional y estética.”
                 </p>
               </div>
             </div>
@@ -829,76 +683,19 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer Mejorado -->
-    <footer class="footer_section bg-dark text-white py-3">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <!-- Sobre Nosotros -->
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h5 class="mb-3">Letra y Orden</h5>
-            <p>
-              Transformando la organización documental con creatividad y
-              profesionalismo.
-            </p>
-          </div>
-
-          <!-- Contacto -->
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h5 class="mb-3">Contacto</h5>
-            <p><i class="fa-solid fa-location-dot me-2"></i>Oruro, Bolivia</p>
-            <p><i class="fa-solid fa-phone me-2"></i> 69219005</p>
-            <p>
-              <i class="fa-solid fa-envelope me-2"></i>l etrayorden@gmail.com
-            </p>
-          </div>
-
-          <!-- Redes Sociales -->
-          <div class="col-md-4">
-            <h5 class="mb-3">Síguenos</h5>
-            <a href="#" class="text-white me-3 fs-4"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="#" class="text-white me-3 fs-4"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="#" class="text-white me-3 fs-4"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="#" class="text-white fs-4"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JS con Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
+
+
+<div id="templates/footer"></div>
+
 <script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  fetch("../templates/header.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/header").innerHTML = d));
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 100; // ajusta el margen
-      if (scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      }
-    });
-  });
+  fetch("../templates/footer.html")
+    .then((r) => r.text())
+    .then((d) => (document.getElementById("templates/footer").innerHTML = d));
 </script>
+
