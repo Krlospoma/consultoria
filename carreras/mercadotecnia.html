@@ -1,62 +1,99 @@
-<div id="templates/header"></div>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Institutos CATEC" />
+    <title>Instituto CATEC</title>
+    <link rel="icon" type="image/png" href="/images/logo.jpeg" />
 
-<section class="py-5" style="background: #f8f9fa; min-height: 100vh">
-  <div class="container">
-    <div class="text-center mb-5">
-      <i class="fa-solid fa-bullhorn fa-5x mb-3" style="color: #023b48"></i>
-      <h2 class="fw-bold">MERCADOTECNIA</h2>
-      <p class="text-muted fs-5">
-        Estrategias de venta, publicidad, branding y posicionamiento en mercados
-        competitivos.
-      </p>
-    </div>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="bg-white p-4 shadow-sm rounded mb-4">
-          <h4 class="fw-bold">Descripción de la carrera</h4>
-          <p>
-            Forma profesionales expertos en analizar mercados, planear campañas
-            publicitarias, gestionar marcas y desarrollar estrategias de venta
-            efectivas.
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Estilos personalizados -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="templates/header"></div>
+
+    <section class="py-5" style="background: #f8f9fa; min-height: 100vh">
+      <div class="container">
+        <div class="text-center mb-5">
+          <i class="fa-solid fa-bullhorn fa-5x mb-3" style="color: #023b48"></i>
+          <h2 class="fw-bold">MERCADOTECNIA</h2>
+          <p class="text-muted fs-5">
+            Estrategias de venta, publicidad, branding y posicionamiento en
+            mercados competitivos.
           </p>
         </div>
 
-        <div class="bg-white p-4 shadow-sm rounded mb-4">
-          <h4 class="fw-bold">Plan de Estudios</h4>
-          <ul>
-            <li>Marketing Digital</li>
-            <li>Investigación de Mercados</li>
-            <li>Publicidad y Promoción</li>
-            <li>Branding y Comunicación</li>
-            <li>Gestión de Ventas</li>
-            <li>Emprendimiento Comercial</li>
-          </ul>
-        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="bg-white p-4 shadow-sm rounded mb-4">
+              <h4 class="fw-bold">Descripción de la carrera</h4>
+              <p>
+                Forma profesionales expertos en analizar mercados, planear
+                campañas publicitarias, gestionar marcas y desarrollar
+                estrategias de venta efectivas.
+              </p>
+            </div>
 
-        <div class="bg-white p-4 shadow-sm rounded mb-4">
-          <h4 class="fw-bold">Campo Laboral</h4>
-          <ul>
-            <li>Analista de marketing</li>
-            <li>Gestor de redes sociales</li>
-            <li>Consultor publicitario</li>
-            <li>Coordinador de campañas comerciales</li>
-            <li>Emprendedor de marca propia</li>
-          </ul>
+            <div class="bg-white p-4 shadow-sm rounded mb-4">
+              <h4 class="fw-bold">Plan de Estudios</h4>
+              <ul>
+                <li>Marketing Digital</li>
+                <li>Investigación de Mercados</li>
+                <li>Publicidad y Promoción</li>
+                <li>Branding y Comunicación</li>
+                <li>Gestión de Ventas</li>
+                <li>Emprendimiento Comercial</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-4 shadow-sm rounded mb-4">
+              <h4 class="fw-bold">Campo Laboral</h4>
+              <ul>
+                <li>Analista de marketing</li>
+                <li>Gestor de redes sociales</li>
+                <li>Consultor publicitario</li>
+                <li>Coordinador de campañas comerciales</li>
+                <li>Emprendedor de marca propia</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<div id="templates/footer"></div>
+    <div id="templates/footer"></div>
 
-<script>
-  fetch("../templates/header.html")
-    .then((r) => r.text())
-    .then((d) => (document.getElementById("templates/header").innerHTML = d));
+    <script>
+      fetch("/templates/header.html")
+        .then((r) => r.text())
+        .then(
+          (d) => (document.getElementById("templates/header").innerHTML = d)
+        );
 
-  fetch("../templates/footer.html")
-    .then((r) => r.text())
-    .then((d) => (document.getElementById("templates/footer").innerHTML = d));
-</script>
+      fetch("/templates/footer.html")
+        .then((r) => r.text())
+        .then(
+          (d) => (document.getElementById("templates/footer").innerHTML = d)
+        );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
